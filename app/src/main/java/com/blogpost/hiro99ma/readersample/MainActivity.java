@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         if (mNfcAdapter != null) {
             Log.d(TAG, "enable reader mode");
             mNfcAdapter.enableReaderMode(this, new MyReaderCallback(),
-                    NfcAdapter.FLAG_READER_NFC_A | NfcAdapter.FLAG_READER_NFC_F,
+                    NfcAdapter.FLAG_READER_NFC_A /*| NfcAdapter.FLAG_READER_NFC_F*/,
                     null);
         }
     }
